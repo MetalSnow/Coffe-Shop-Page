@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(./fonts/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: "Whocats";
+  src: url(./fonts/Whocats.ttf);
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background: url(./imgs/bg.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  width: 350px;
+}
+
+header {
+  width: 100%;
+  background-color: #00000064;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Home Section */
+
+.home {
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: brown;
+  background-color: bisque;
+  height: 100%;
+}
+
+h2 {
+  font-family: "Whocats", sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.cup {
+  width: 30px;
+}
+
+.coffee-machine {
+  width: 100px;
+  border-radius: 10px;
+}

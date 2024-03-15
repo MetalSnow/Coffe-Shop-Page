@@ -1,3 +1,4 @@
-import { generateContent } from "./content";
+import "./style.css";
+import { generateContent } from "./home";
 
 generateContent();
