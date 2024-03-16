@@ -6,9 +6,19 @@
   font-family: "Whocats";
   src: url(./fonts/Whocats.ttf);
 }
+@font-face {
+  font-family: "Journal";
+  src: url(./fonts/JOURNAL.TTF);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
 
 body {
-  margin: 0;
   font-family: "Roboto", sans-serif;
   background: url(./imgs/bg.jpg) no-repeat;
   background-size: cover;
@@ -28,26 +38,30 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px 0px;
 }
 
 #content {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  padding: 15px;
 }
 
 /* Home Section */
 
 .home {
-  max-width: 60%;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  padding: 20px;
   color: brown;
   background-color: bisque;
   height: 100%;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px rgb(0, 0, 0, 0.3);
 }
 
 h2 {
@@ -62,6 +76,45 @@ h2 {
 }
 
 .coffee-machine {
-  width: 100px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 6px rgb(0, 0, 0, 0.3);
+}
+
+p {
+  font-size: 18px;
+  color: black;
+}
+
+/* Menu Section */
+
+.menu {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  gap: 10px;
+  color: brown;
+  background: url(./imgs/bg-menu.jpg) no-repeat;
+  background-size: cover;
   border-radius: 10px;
+  opacity: 0.9;
+  box-shadow: 1px 1px 6px rgb(0, 0, 0, 0.3);
+}
+
+.item {
+  width: 80%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.item-name {
+  font-family: "Journal", sans-serif;
+  font-size: 50px;
+}
+
+.item-desc {
+  color: rgb(73, 20, 20);
 }

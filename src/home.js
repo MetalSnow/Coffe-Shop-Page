@@ -18,7 +18,7 @@ function generateContent() {
   const homeIcon = new Image();
   homeIcon.src = Icon;
 
-  homeIcon.classList.add("coffe-machine");
+  homeImg.classList.add("coffee-machine");
   homeIcon.classList.add("cup");
 
   h2.appendChild(homeIcon);
