@@ -11,16 +11,23 @@ const aboutBtn = document.querySelector("#About");
 generateHome();
 
 function switchHomeTab() {
-  div.innerHTML = "";
+  clearContent();
   generateHome();
 }
 function switchMenuTab() {
-  div.innerHTML = "";
+  clearContent();
   generateMenu();
 }
 function switchAboutTab() {
-  div.innerHTML = "";
+  clearContent();
   generateContact();
+}
+
+// Clear Content
+function clearContent() {
+  if (div.firstChild) {
+    div.removeChild(div.firstChild);
+  }
 }
 
 homeBtn.addEventListener("click", switchHomeTab);
